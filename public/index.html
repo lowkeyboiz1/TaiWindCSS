@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/favicon/sheep.png">
     <title>Document</title>
     <link href="./output.css" rel="stylesheet">
 </head>
 
 <body>
     <div id="root">
-        <div class="content-wrapper max-w-screen-lg mx-auto text-base px-8 bg-slate-400">
-            <header class="py-6 mx-10">
-                <nav class="flex justify-between items-center">
-                    <div class="logo basis-2/6 cursor-pointer font-semibold text-xl text-center">
+        <div class="content-wrapper font-Karla max-w-screen-lg mx-auto text-base px-8 bg-slate-400">
+            <header class="py-6 mx-4">
+                <nav class="flex justify-between items-center relative">
+                    <div class="logo basis-2/6 cursor-pointer font-semibold text-xl text-start">
                         CoffeeStyle.
                     </div>
-                    <ul
-                        class="basis-3/6 flex items-center justify-end gap-6 uppercase text-sm text-gray-500 font-medium">
-                        <li class="ct-top-menu-item">
+                    <ul id="ct-top-menu"
+                        class="lg:basis-3/6 hidden md:flex lg:flex lg:items-center justify-end gap-8 uppercase text-sm text-gray-500 font-medium" >
+                        <li class="ct-top-menu-item ct-top-menu-item--active">
                             <a href="#" class="">
                                 Home
                             </a>
@@ -49,15 +50,10 @@
                                 StyleGuide
                             </a>
                         </li>
-                        <li class="ct-top-menu-item">
-                            <a href="#" class="">
-                                LuongViKhang
-                            </a>
-                        </li>
                     </ul>
 
-                    <ul class="basis-1/6 flex justify-start items-center ml-16 uppercase text-gray-500 font-medium">
-                        <li class="ct-top-menu-item ">
+                    <ul class="basic-3/6 lg:basis-1/6 flex justify-start lg:justify-start items-center lg:ml-16 uppercase text-gray-500 font-medium">
+                        <li class="ct-top-menu-item">
                             <a href="#" class="flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="ct-icon">
@@ -69,6 +65,15 @@
                                 <span class="ct-badge-circle bg-orange-400 text-white">7</span>
                             </a>
                         </li>
+                    </ul>
+
+                    <ul class="basic-1/6 md:hidden lg:hidden cursor-pointer">
+                        <svg id="ct-toggle-top-menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-10 h-10">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+
                     </ul>
                 </nav>
             </header>
@@ -108,6 +113,8 @@
             </footer>
         </div> <!--End content-wrapper-->
     </div> <!--End root-->
+    <script type="text/javascript" src="./main.js"></script>
+
 </body>
 
 </html>
