@@ -1,8 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: 'jit',
   content: ["./public/**/*.{html,js}"],
   theme: {
     extend: {
+      
+      backgroundImage: {
+        'slider': "url('./img/slide.jpg')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
       fontFamily: {
         Karla: ['Karla', 'sans-serif']
       },
