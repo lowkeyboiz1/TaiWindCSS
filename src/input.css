@@ -23,3 +23,11 @@
 .ct-badge-circle {
     @apply text-xs rounded-full px-1.5 text-center;
 }
+
+.ct-subheadline-wrapper {
+    @apply flex justify-center items-center uppercase tracking-widest text-xs text-[#777982] font-bold my-[100px] text-center;
+}
+
+.subheadline {
+    @apply h-[1px] w-[30px] bg-[#ececed];
+}
