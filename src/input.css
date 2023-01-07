@@ -31,3 +31,16 @@
 .subheadline {
     @apply h-[1px] w-[30px] bg-[#ececed];
 }
+
+.overlay {
+   @apply bg-slate-900 h-full w-full bg-opacity-0 hover:bg-opacity-10 duration-300 cursor-pointer;
+}
+
+.ct-explore-mugs {
+    @apply hidden uppercase absolute bottom-4 text-[#161724] py-[18px] bg-white w-[90%] text-center 
+    text-xs font-bold tracking-widest left-1/2 -translate-x-1/2 animate-[slideUp_0.3s_ease-in-out];
+}
+.ct-sale-tag {
+    @apply absolute right-4 top-4 py-[6px] px-[15px] bg-white text-[#a25f4b] 
+    text-base font-bold;
+}
