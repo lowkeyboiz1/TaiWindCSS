@@ -9,7 +9,7 @@
 
 .ct-top-menu-item {
     @apply cursor-pointer hover:text-gray-800 relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-light-coffee-400
-    after:lg:h-0.5 after:lg:w-0 hover:after:lg:w-full after:lg:transition-all after:lg:ease-in-out after:lg:duration-300 py-1;
+    after:lg:h-0.5 after:lg:w-0 hover:after:lg:w-full after:lg:transition-all after:lg:ease-in-out after:lg:duration-300 py-4;
 }
 
 .ct-top-menu-item--active {
@@ -43,4 +43,19 @@
 .ct-sale-tag {
     @apply absolute right-4 top-4 py-[6px] px-[15px] bg-white text-[#a25f4b] 
     text-base font-bold;
+}
+.ct-old-price {
+    @apply text-[#1d1f2e66] line-through text-base;
+}
+
+.ct-current-price {
+    @apply mb-[15px] text-[#a25f4b] text-lg mr-1;
+}
+
+.ct-price {
+    @apply mb-[15px] text-[#1d1f2eb3] text-sm;
+}
+
+.ct-images {
+    @apply bg-center bg-cover bg-no-repeat;
 }

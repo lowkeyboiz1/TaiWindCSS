@@ -18,7 +18,6 @@ module.exports = {
         'light-coffee': {
           '200': '#a25f4b',
           '400': '#c89f94',
-
         },
         'gray-base': '#1d1f2eb3'
       },

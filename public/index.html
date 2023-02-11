@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="./img/favicon/sheep.png">
     <title>Document</title>
     <link href="./output.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -52,30 +53,32 @@
                         </li>
                     </ul>
 
-                    <ul
-                        class="basic-3/6 lg:basis-1/6 flex justify-start lg:justify-start items-center lg:ml-16 uppercase text-gray-500 font-medium">
-                        <li class="ct-top-menu-item">
-                            <a href="#" class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="ct-icon">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-                                </svg>
+                    <div class="wrapper-menu-moblie flex items-center">
+                        <ul
+                            class="basic-3/6 lg:basis-1/6 flex justify-start lg:justify-start items-center lg:ml-16 uppercase text-gray-500 font-medium">
+                            <li class="ct-top-menu-item">
+                                <a href="#" class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="ct-icon">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                    </svg>
 
-                                <span class="mx-1"> Cart</span>
-                                <span class="ct-badge-circle bg-orange-400 text-white">7</span>
-                            </a>
-                        </li>
-                    </ul>
+                                    <span class="mx-1"> Cart</span>
+                                    <span class="ct-badge-circle bg-orange-400 text-white">7</span>
+                                </a>
+                            </li>
+                        </ul>
 
-                    <ul class="basic-1/6 md:hidden lg:hidden cursor-pointer">
-                        <svg id="ct-toggle-top-menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
+                        <ul class="basic-1/6 md:hidden lg:hidden cursor-pointer ml-8">
+                            <svg id="ct-toggle-top-menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
 
-                    </ul>
+                        </ul>
+                    </div>
                 </nav>
             </header>
             <main>
@@ -133,24 +136,24 @@
                 <div class="featured-collection lg:flex lg:justify-center lg:gap-5">
                     <div class="featured-collection-wrapper">
                         <div
-                            class="group h-[370px] w-[94%] lg:h-[540px] lg:w-[460px] mx-auto bg-[url('./img/featured-mugs-1.jpg')] bg-cover bg-no-repeat relative">
+                            class="group h-[380px] w-[94%] lg:h-[540px] lg:w-[460px] bg-center mx-auto bg-[url('./img/featured-mugs-1.jpg')] bg-cover bg-no-repeat relative">
                             <div class="overlay"></div>
                             <div class="ct-explore-mugs group-hover:block">
                                 EXPLORE MUGS
                             </div>
                         </div>
                         <div class="text-center">
-                            <div class="mt-[25px] mb-[5px]">
+                            <div class="mt-[25px] mb-[5px] cursor-pointer">
                                 Pink Premium Ceramic
                             </div>
-                            <div class="ct-price mb-[15px] text-[#1d1f2eb3] text-lg">
+                            <div class="ct-price">
                                 $ 99.00 USD
                             </div>
                         </div>
                     </div>
                     <div class="featured-collection-wrapper">
                         <div
-                            class="group h-[370px] w-[94%] lg:h-[540px] lg:w-[460px] mx-auto bg-[url('./img/featured-mugs-2.jpg')] bg-cover bg-no-repeat relative">
+                            class="group h-[370px] w-[94%] lg:h-[540px] lg:w-[460px] mx-auto bg-[url('./img/featured-mugs-2.jpg')] bg-center bg-cover bg-no-repeat relative">
                             <div class="overlay">
                                 <div class="ct-sale-tag">
                                     On Sale.
@@ -161,33 +164,31 @@
                             </div>
                         </div>
                         <div class="text-center">
-                            <div class="mt-[25px] mb-[5px]">
+                            <div class="mt-[25px] mb-[5px] cursor-pointer">
                                 Golden Designers Mug
                             </div>
-                            <div class="">
-                                <span class="ct-current-price mb-[15px] text-[#a25f4b] text-lg mr-1">$50.00</span>
-                                <span class="ct-old-price text-[#1d1f2e66] line-through text-base">
+                                <span class="ct-current-price">$50.00</span>
+                                <span class="ct-old-price">
                                     $ 69.00 USD
                                 </span>
-                            </div>
                         </div>
                     </div>
-
-
-
-
-
-
-
-                </div>
+                </div> <!--End featured-collection-->
 
                 <div class="more-products ct-subheadline-wrapper">
                     <div class="subheadline"></div>
                     <div class="mx-[15px]">
-                        more-products
+                        MORE PRODUCTS
                     </div>
                     <div class="subheadline"></div>
                 </div> <!--End more-products-->
+
+
+
+
+                <div class="featured-collection md:flex md:justify-center md:w-[100%] md:gap-2 lg:flex lg:justify-center lg:gap-3 lg:flex-wrap md:flex-wrap" 
+                id="more-product-collection">
+                </div><!--End more-product-collection-->
 
                 <div class="ct-subheadline-wrapper">
                     <div class="subheadline"></div>
@@ -197,8 +198,19 @@
                     <div class="subheadline"></div>
                 </div>
 
-                <div class="coffee-magazine">
-                    coffee-magazine
+                <div class="coffee-magazine w-[95%] xl:w-[65%] mx-auto mb-24">
+                    <div class="">
+                        <div class="ct-magazine-images">
+                            <div class="ct-magazine-big-image ct-images bg-[url('./img/magazine-01.jpg')]"></div>
+                            <div class="ct-magazine-small-image">
+                                <div class="ct-magazine-small-image-01 bg-[url('./img/magazine-01.jpg')]"></div>
+                                <div class="ct-magazine-small-image-02 bg-[url('./img/magazine-01.jpg')]"></div>
+                            </div>
+                        </div>
+                        <div class="ct-magazine-post">
+                            test post 
+                        </div>
+                    </div>
                 </div> <!--End coffee-magazine-->
 
                 <div class="lifestyle-stories">
@@ -215,8 +227,7 @@
             </footer>
         </div> <!--End content-wrapper-->
     </div> <!--End root-->
-    <script type="text/javascript" src="./main.js"></script>
-
+    
 </body>
-
+<script src="./main.js"></script>
 </html>
