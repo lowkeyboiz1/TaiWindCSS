@@ -100,7 +100,6 @@ window.addEventListener('resize', () => {
 // render list more product item
 const moreProductCollection = document.querySelector('#more-product-collection');
 const renderItem = (item) => {
-    console.log(item.img);
     return `
     <div class="featured-collection-wrapper mb-12 md:w-[30%] lg:w-auto">
     <div style="background-image: url('./img/${item.img}');"
