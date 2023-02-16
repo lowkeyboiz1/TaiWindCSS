@@ -101,9 +101,9 @@ window.addEventListener('resize', () => {
 const moreProductCollection = document.querySelector('#more-product-collection');
 const renderItem = (item) => {
     return `
-    <div class="featured-collection-wrapper mb-12 md:w-[30%] lg:w-auto">
+    <div class="featured-collection-wrapper mb-12 w-full md:w-[30%]">
     <div style="background-image: url('./img/${item.img}');"
-        class="group h-[370px] w-[94%] lg:h-[380px] lg:w-[300px] mx-auto md:w-[100%] bg-center bg-cover bg-no-repeat relative">
+        class="group h-[370px] w-[94%] lg:h-[380px] mx-auto md:mx-0 md:w-[100%] bg-center bg-cover bg-no-repeat relative">
         <div class="overlay">
             ${item.sale ? `<div class="ct-sale-tag">
                                 On Sale.
